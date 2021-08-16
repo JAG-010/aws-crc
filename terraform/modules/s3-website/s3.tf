@@ -27,9 +27,7 @@ EOF
   provisioner "local-exec" {
     command = "aws s3 sync ${var.webpath} s3://${aws_s3_bucket.crc_web.id}"
   }
-  tags = {
-    Name = "aws-crc"
-  }
+  tags = local.tags
 }
 
 # output "website_endpoint" {

@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket = "terraform-aws-crc"
     key    = "crc/tfstate/terraform.tfstate"
-    region = "us-east-2"
+    region = var.aws_region
   }
 }
 

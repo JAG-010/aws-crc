@@ -1,7 +1,7 @@
 # Cloud Resume Challange (AWS)
 
-1. Create a HTML website of your resume
-2. Host as static website using S3 bucket
+1. ✅ Create a HTML website of your resume
+2. ✅ Host as static website using S3 bucket
 3. Enable HTTPS using cloudfront
 
 
@@ -19,7 +19,20 @@ https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a
 using terraform to create s3 bucket and made it public 
 uploaded HTML and CSS file to bucket and added policy to access publicly 
 
+## Enable HTTPS using cloudfront
+https://www.youtube.com/watch?v=lB4DTqMEumY
+
+## Progress
 [8/12/2021] static wesite working 
 
-To-Do
-1. Need to enable remote backend for terraform
+## To-Do
+
+1. ~~Need to enable remote backend for terraform~~
+
+
+## Resource 
+
+### Domain registration
+- [Freenom](www.freenom.com) - to regester domain for free
+- [namesilo](https://www.namesilo.com)
+- [porkbun](https://porkbun.com)
