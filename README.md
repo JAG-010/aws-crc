@@ -25,12 +25,13 @@ https://www.youtube.com/watch?v=lB4DTqMEumY
 ### Create a hosted-zone on Route 53
 ### Create a SSL certificate
 On AWS Certificate manager create a SSL certificate for domain
+**Important Use us-east-1**
 
 ## Progress
 | Date | Milestone |
 | --- | --- |
 | [8/12/2021] | static website working |
-| [8/15/2021] | bough new domain **jagan-sekaran.me** |
+| [8/15/2021] | bought new domain **jagan-sekaran.me** |
 
 ## << To-Do >>
 
@@ -43,6 +44,6 @@ On AWS Certificate manager create a SSL certificate for domain
 ## Resource 
 
 ### Domain registration
-- [Freenom](www.freenom.com) - to regester domain for free
+- [Freenom](www.freenom.com) - to register domain for free
 - [namesilo](https://www.namesilo.com)
 - [porkbun](https://porkbun.com) ✅

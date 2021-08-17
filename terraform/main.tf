@@ -6,13 +6,10 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = var.aws_region
-}
 
 module "s3-website" {
   source      = "./modules/s3-website"
-  domain_name = "www.jag-crc.com"
+  domain_name = var.site_name
   webpath     = "/Users/jag/Documents/CloudResumeChallenge/aws-crc/HTML-Webpage"
 }
 
@@ -25,6 +22,7 @@ resource "aws_route53_zone" "primary_hz" {
 
 // Create certificate 
 resource "aws_acm_certificate" "cert_acm" {
+  # provider = aws.us-east-1
   domain_name       = var.site_name
   validation_method = "DNS"
 
@@ -39,6 +37,9 @@ resource "aws_acm_certificate" "cert_acm" {
 data "aws_route53_zone" "r53data" {
   name         = var.site_name
   private_zone = false
+  depends_on = [
+    aws_route53_zone.primary_hz
+  ]
 }
 
 resource "aws_route53_record" "r53record" {
