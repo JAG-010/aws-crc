@@ -10,7 +10,8 @@ terraform {
 module "s3-website" {
   source      = "./modules/s3-website"
   domain_name = var.site_name
-  webpath     = "/Users/jag/Documents/CloudResumeChallenge/aws-crc/HTML-Webpage"
+  # webpath     = "/Users/jag/Documents/CloudResumeChallenge/aws-crc/HTML-Webpage"
+  webpath = "../HTML-Webpage"
 }
 
 // Create Hosted zone on Route 53
@@ -57,12 +58,20 @@ resource "aws_route53_record" "r53record" {
   ttl             = 60
   type            = each.value.type
   zone_id         = data.aws_route53_zone.r53data.zone_id
+
+  depends_on = [
+    aws_acm_certificate.cert_acm
+  ]
 }
 
 
 resource "aws_acm_certificate_validation" "acm_validate" {
   certificate_arn         = aws_acm_certificate.cert_acm.arn
   validation_record_fqdns = [for record in aws_route53_record.r53record : record.fqdn]
+
+  depends_on = [
+    aws_route53_record.r53record
+  ]
 }
 # output "website_endpoint" {
 #   value = aws_s3_bucket.crc_web.website_endpoint

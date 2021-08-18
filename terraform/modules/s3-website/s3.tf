@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "crc_web" {
-  bucket = var.domain_name
-  acl    = "public-read"
+  bucket        = var.domain_name
+  acl           = "public-read"
   force_destroy = true
 
   website {

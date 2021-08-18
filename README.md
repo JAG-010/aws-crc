@@ -26,19 +26,25 @@ https://www.youtube.com/watch?v=lB4DTqMEumY
 ### Create a SSL certificate
 On AWS Certificate manager create a SSL certificate for domain
 **Important Use us-east-1**
+### validate certificate
 
 ## Progress
 | Date | Milestone |
 | --- | --- |
 | [8/12/2021] | static website working |
 | [8/15/2021] | bought new domain **jagan-sekaran.me** |
+| [8/17/2021] | Created SSL certificate and added a Route 53 HZ entry |
+|   | Enabled HTTPS on cloudfront |
+| [8/18/2021] | **jagan-sekaran.me** URL working |
 
 ## << To-Do >>
 
 1. ~~Need to enable remote backend for terraform~~
 2. ~~But a domain name~~ 
-3. Add domain to **Route 53**
-4. enable cloudfront
+3. ~~Add domain to **Route 53**~~
+4. ~~enable cloudfront~~
+5. ~~Add cloudfront domain name to **Route 53**~~
+6. Make sure CF is redirecting only to HTTPS
 
 
 ## Resource 

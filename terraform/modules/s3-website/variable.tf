@@ -11,3 +11,8 @@ variable "domain_name" {
 variable "webpath" {
   type = string
 }
+
+variable "site_name" {
+  type    = string
+  default = "jagan-sekaran.me"
+}
