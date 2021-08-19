@@ -1,10 +1,23 @@
 # Cloud Resume Challenge (AWS)
 
-1. ✅ Create a HTML website of your resume
-2. ✅ Host as static website using S3 bucket
-3. Enable HTTPS using cloudfront
-
-
+---
+1. Certification ✅ 
+2. HTML ✅
+3. CSS ✅
+4. Static S3 Website ✅
+5. HTTPS ✅
+6. DNS ✅
+7. Javascript
+8. Database
+9. API
+10. Python
+11. Tests
+12. Infrastructure as Code ✅
+13. Source Control ✅
+14. CI/CD (Back end)
+15. CI/CD (Front end) ✅
+16. Blog post
+    
 ## Create HTML website of resume
 
 Used template to create a webpage to create my resume added CSS styles to make it look modern.
@@ -22,11 +35,17 @@ uploaded HTML and CSS file to bucket and added policy to access publicly
 ## Enable HTTPS using cloudfront
 https://www.youtube.com/watch?v=lB4DTqMEumY
 
-### Create a hosted-zone on Route 53
-### Create a SSL certificate
+#### Create a hosted-zone on Route 53
+#### Create a SSL certificate
 On AWS Certificate manager create a SSL certificate for domain
 **Important Use us-east-1**
-### validate certificate
+#### Validate certificate
+#### Create CloudFront distribution 
+#### Add CF URL to Route 53 HZ 
+
+## Create CI/CD pipeline using Github actions for frontend
+Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever there is a code change.
+
 
 ## Progress
 | Date | Milestone |
@@ -36,6 +55,7 @@ On AWS Certificate manager create a SSL certificate for domain
 | [8/17/2021] | Created SSL certificate and added a Route 53 HZ entry |
 |   | Enabled HTTPS on cloudfront |
 | [8/18/2021] | **jagan-sekaran.me** URL working |
+| [8/18/2021] | Created github actions for frontend |
 
 ## << To-Do >>
 
@@ -44,7 +64,8 @@ On AWS Certificate manager create a SSL certificate for domain
 3. ~~Add domain to **Route 53**~~
 4. ~~enable cloudfront~~
 5. ~~Add cloudfront domain name to **Route 53**~~
-6. Make sure CF is redirecting only to HTTPS
+6. ~~Make sure CF is redirecting only to HTTPS~~ 
+7. CloudFront cache refresh after CICD pipeline
 
 
 ## Resource 
