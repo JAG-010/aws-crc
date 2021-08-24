@@ -55,7 +55,7 @@ jobs:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
           # tf_actions_working_dir: terraform
         with:
-          tf_actions_working_dir: ./terraform
+          # tf_actions_working_dir: ./terraform
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
