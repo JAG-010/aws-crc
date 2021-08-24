@@ -5,8 +5,8 @@ on:
     branches:
       - FeatureBranch
   pull_request:
-    # branches:
-    #   - FeatureBranch
+    branches:
+      - FeatureBranch
 
 jobs:
   terraform:
