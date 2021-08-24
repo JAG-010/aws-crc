@@ -7,12 +7,12 @@ terraform {
 }
 
 
-module "s3-website" {
-  source      = "./modules/s3-website"
-  domain_name = var.site_name
-  # webpath     = "/Users/jag/Documents/CloudResumeChallenge/aws-crc/HTML-Webpage"
-  webpath = "./HTML-Webpage"
-}
+# module "s3-website" {
+#   source      = "./modules/s3-website"
+#   domain_name = var.site_name
+#   # webpath     = "/Users/jag/Documents/CloudResumeChallenge/aws-crc/HTML-Webpage"
+#   webpath = "./HTML-Webpage"
+# }
 
 
 # output "website_endpoint" {
