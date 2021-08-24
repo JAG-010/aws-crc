@@ -30,14 +30,10 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
-        with:
-          tf_actions_working_dir: terraform
       
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
-        with:
-          tf_actions_working_dir: terraform
 
       - name: Terraform Plan
         id: plan
