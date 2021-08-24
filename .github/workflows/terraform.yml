@@ -26,8 +26,6 @@ jobs:
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
-        with:
-          tf_actions_working_dir: terraform
 
       - name: Terraform Init
         id: init
