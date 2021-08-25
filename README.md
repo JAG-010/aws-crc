@@ -46,6 +46,7 @@ On AWS Certificate manager create a SSL certificate for domain
 ## Create CI/CD pipeline using Github actions for frontend
 Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever there is a code change.
 
+## Create CI/CD pipeline using GH Actions for backend
 
 ## Progress
 | Date | Milestone |
