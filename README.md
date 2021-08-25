@@ -14,7 +14,7 @@
 11. Tests
 12. Infrastructure as Code ✅
 13. Source Control ✅
-14. CI/CD (Back end)
+14. CI/CD (Back end) ✅
 15. CI/CD (Front end) ✅
 16. Blog post
     
@@ -55,7 +55,8 @@ Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever 
 | [8/17/2021] | Created SSL certificate and added a Route 53 HZ entry |
 |   | Enabled HTTPS on cloudfront |
 | [8/18/2021] | **jagan-sekaran.me** URL working |
-| [8/18/2021] | Created github actions for frontend |
+| [8/18/2021] | Created GitHub actions for frontend |
+| [8/24/2021] | Created GitHub Actions for backend |
 
 ## << To-Do >>
 
