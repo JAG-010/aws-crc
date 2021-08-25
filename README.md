@@ -68,6 +68,7 @@ Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever 
 5. ~~Add cloudfront domain name to **Route 53**~~
 6. ~~Make sure CF is redirecting only to HTTPS~~ 
 7. CloudFront cache refresh after CICD pipeline
+8. TF apply not working in main branch pull-request
 
 
 ## Resource 
