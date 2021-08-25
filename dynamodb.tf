@@ -3,14 +3,18 @@ resource "aws_dynamodb_table" "crc-dynamodb-table" {
   billing_mode   = "PAY_PER_REQUEST"
   read_capacity  = 1
   write_capacity = 1
-  hash_key       = "visitor_num"
+  hash_key       = "ID"
 
 
   attribute {
-    name = "visitor_num"
+    name = "ID"
     type = "N"
   }
 
+  attribute {
+    name = "count"
+    type = "N"
+  }
 
   tags = local.tags
 }
