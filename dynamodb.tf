@@ -11,6 +11,6 @@ resource "aws_dynamodb_table" "crc-dynamodb-table" {
     type = "N"
   }
 
- 
+
   tags = local.tags
 }
