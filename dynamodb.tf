@@ -11,10 +11,6 @@ resource "aws_dynamodb_table" "crc-dynamodb-table" {
     type = "N"
   }
 
-  attribute {
-    name = "count"
-    type = "N"
-  }
 
   tags = local.tags
 }
