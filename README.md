@@ -8,7 +8,7 @@
 5. HTTPS ✅
 6. DNS ✅
 7. Javascript
-8. Database
+8. Database ✅
 9. API
 10. Python
 11. Tests
@@ -47,6 +47,9 @@ On AWS Certificate manager create a SSL certificate for domain
 Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever there is a code change.
 
 ## Create CI/CD pipeline using GH Actions for backend
+Use GitHub actions to create a CI/CD pipeline to trigger terraform plan and apply
+
+
 
 ## Progress
 | Date | Milestone |
@@ -58,6 +61,7 @@ Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever 
 | [8/18/2021] | **jagan-sekaran.me** URL working |
 | [8/18/2021] | Created GitHub actions for frontend |
 | [8/24/2021] | Created GitHub Actions for backend |
+| [8/25/2021] | Created DynamoDB table |
 
 ## << To-Do >>
 
@@ -68,7 +72,7 @@ Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever 
 5. ~~Add cloudfront domain name to **Route 53**~~
 6. ~~Make sure CF is redirecting only to HTTPS~~ 
 7. CloudFront cache refresh after CICD pipeline
-8. TF apply not working in main branch pull-request
+8. ~~TF apply not working in main branch pull-request~~
 
 
 ## Resource 
