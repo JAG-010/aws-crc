@@ -1,5 +1,5 @@
 resource "aws_api_gateway_rest_api" "crc_api" {
-  name = "crc_api"
+  name        = "crc_api"
   description = "API to get data from DynamoDB via Lambda"
 }
 
@@ -17,12 +17,12 @@ resource "aws_api_gateway_method" "crc_api" {
 }
 
 resource "aws_api_gateway_integration" "crc_api" {
-  http_method = aws_api_gateway_method.crc_api.http_method
-  resource_id = aws_api_gateway_resource.crc_api.id
-  rest_api_id = aws_api_gateway_rest_api.crc_api.id
+  http_method             = aws_api_gateway_method.crc_api.http_method
+  resource_id             = aws_api_gateway_resource.crc_api.id
+  rest_api_id             = aws_api_gateway_rest_api.crc_api.id
   integration_http_method = "POST"
-  type = "AWS_PROXY"
-  uri = aws_lambda_function.lambda_py.invoke_arn
+  type                    = "AWS_PROXY"
+  uri                     = aws_lambda_function.lambda_py.invoke_arn
 }
 
 resource "aws_api_gateway_deployment" "crc_api" {

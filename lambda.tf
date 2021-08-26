@@ -37,7 +37,7 @@ resource "aws_lambda_function" "lambda_py" {
 
   runtime = "python3.8"
 
-  # tags = local.tags
+  tags = local.tags
   # depends_on = [
   #   data.archive_file.pyzip
   # ]
