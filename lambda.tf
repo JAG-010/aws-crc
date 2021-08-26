@@ -1,8 +1,8 @@
-data "archive_file" "pyzip" {
-  type        = "zip"
-  source_file = "py_scripts/lambda4dynamodb.py"
-  output_path = "py_scripts/lambda4dynamodb.zip"
-}
+# data "archive_file" "pyzip" {
+#   type        = "zip"
+#   source_file = "py_scripts/lambda4dynamodb.py"
+#   output_path = "py_scripts/lambda4dynamodb.zip"
+# }
 
 resource "aws_iam_role" "iam_for_lambda" {
   name = "iam_for_lambda"
@@ -38,9 +38,9 @@ resource "aws_lambda_function" "lambda_py" {
   runtime = "python3.8"
 
   tags = local.tags
-  depends_on = [
-    data.archive_file.pyzip
-  ]
+  # depends_on = [
+  #   data.archive_file.pyzip
+  # ]
 
   #   environment {
   #     variables = {
