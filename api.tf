@@ -96,3 +96,19 @@ resource "aws_api_gateway_stage" "crc_api" {
   rest_api_id   = aws_api_gateway_rest_api.crc_api.id
   stage_name    = "crc_api"
 }
+
+resource "aws_lambda_permission" "apigw" {
+  statement_id  = "AllowAPIGatewayInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda_py.function_name
+  principal     = "apigateway.amazonaws.com"
+
+  # The "/*/*" portion grants access from any method on any resource
+  # within the API Gateway REST API.
+  source_arn = "${aws_api_gateway_rest_api.crc_api.execution_arn}/*/*"
+}
+
+
+output "base_url" {
+  value = aws_api_gateway_deployment.crc_api.invoke_url
+}
