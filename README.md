@@ -49,7 +49,8 @@ Use Github actions to create a pipeline to sync HTML code to S3 bucket whenever 
 ## Create CI/CD pipeline using GH Actions for backend
 Use GitHub actions to create a CI/CD pipeline to trigger terraform plan and apply
 
-
+## Create API Gateway to communicate to Lambda 
+Created REST API to using API Gateway to communicate with Lambda function. Make sure to enable CORS 
 
 ## Progress
 | Date | Milestone |
@@ -62,6 +63,7 @@ Use GitHub actions to create a CI/CD pipeline to trigger terraform plan and appl
 | [8/18/2021] | Created GitHub actions for frontend |
 | [8/24/2021] | Created GitHub Actions for backend |
 | [8/25/2021] | Created DynamoDB table |
+| [8/26/2021] | Create API GateWay |
 
 ## << To-Do >>
 
@@ -73,6 +75,7 @@ Use GitHub actions to create a CI/CD pipeline to trigger terraform plan and appl
 6. ~~Make sure CF is redirecting only to HTTPS~~ 
 7. CloudFront cache refresh after CICD pipeline
 8. ~~TF apply not working in main branch pull-request~~
+9. Update *Line 65 on api.tf* #  replace with hostname
 
 
 ## Resource 
