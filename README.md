@@ -1,4 +1,4 @@
-# Cloud Resume Challenger on Amazon Web Service
+# Cloud Resume Challenge on Amazon Web Service
 > Building my full-stack resume on AWS
 
 This blog is about how I build my resume as website entirely on AWS. This is a challenge created by [Forrest Brazeal](https://twitter.com/forrestbrazeal), Which helped many peoples who wants to step into Cloud technology but doesn't have experience. 
@@ -6,7 +6,7 @@ This blog is about how I build my resume as website entirely on AWS. This is a c
 Visit the official [Cloud Resume Challenge](https://cloudresumechallenge.dev) homepage for more information
 
 ## Requirement for this challenge
-Need to be AWS certified 
+Need to be AWS certified. DONE, I have two ✌🏼
 
 ✅  AWS Cloud Practitioner certification
 
@@ -18,7 +18,7 @@ Need to be AWS certified
 ### 1. Architecture
 First lets start on the papers creating an architecture. Since there are many components involved on this challenge creating a mind map on how things are aligned to build this web-resume.
 
-   ![CRC Architecture](HTML-Webpage/images/CRC-Architecture.png))
+   ![CRC Architecture](HTML-Webpage/images/CRC-Architecture.png)
 
 I have decided to create my entire stack as IaC and I choose Terraform 
 
