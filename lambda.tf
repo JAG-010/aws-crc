@@ -42,9 +42,4 @@ resource "aws_lambda_function" "lambda_py" {
   #   data.archive_file.pyzip
   # ]
 
-  #   environment {
-  #     variables = {
-  #       foo = "bar"
-  #     }
-  #   }
 }
