@@ -24,5 +24,5 @@ terraform {
 module "s3-website" {
   source      = "./modules/s3-website"
   domain_name = var.site_name
-  webpath = "./HTML-Webpage"
+  webpath     = "./HTML-Webpage"
 }
