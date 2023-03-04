@@ -11,11 +11,11 @@ resource "aws_acm_certificate" "cert_acm" {
   }
 }
 
-resource "aws_acm_certificate_validation" "acm_validate" {
-  certificate_arn         = aws_acm_certificate.cert_acm.arn
-  validation_record_fqdns = [for record in aws_route53_record.r53record : record.fqdn]
+# resource "aws_acm_certificate_validation" "acm_validate" {
+#   certificate_arn         = aws_acm_certificate.cert_acm.arn
+#   validation_record_fqdns = [for record in aws_route53_record.r53record : record.fqdn]
 
-  depends_on = [
-    aws_route53_record.r53record
-  ]
-}
+#   depends_on = [
+#     aws_route53_record.r53record
+#   ]
+# }
